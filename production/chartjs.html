@@ -311,7 +311,6 @@
                   <div class="x_content">
                     <canvas id="myChart"></canvas>
                   </div>
-                  <script src="script.js"></script>
                 </div>
               </div>
 
@@ -354,43 +353,173 @@
               </div>
             </div>
 
-            <div class="col-md-6 col-sm-6  ">
+            <div class="col-md-12 col-sm-12 ">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>Tabel</h2>
+                  <h2>Tabel 5 Tender Paling Sering Menang<small>2017</small></h2>
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <canvas id="canvas"></canvas>
-                  var ctx = document.getElementById("canvas");
-                  var canvas = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                      datasets: [
-                        { 
-                          backgroundColor: 'rgba(255, 99, 132, 0.2)'
-                        }
-                      ]
-                    },
-                    plugins: [ChartDataSource],
-                    options: {
-                        title: {
-                            display: true,
-                            fontSize: 30,
-                            text: 'Jumlah Perusahaan Yang Ikut Tender Per Tahun'
-                        },
-                        plugins: {
-                            datasource: {
-                                url: 'Chart.xlsx',
-                                rowMapping: 'index',
-                                datasetLabels: "'Partisipan'!A2",
-                                indexLabels: "'Partisipan'!B1:F1",
-                                data: "'Partisipan'!B2:F2"
-                            }
-                        }
-                    }
-                  });
+                    <div class="row">
+                        <div class="col-sm-12">
+                          <div class="card-box table-responsive">
+                  <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="dataTables_length" id="datatable_length">
+                        <label>Show 
+                          <select name="datatable_length" aria-controls="datatable" class="form-control input-sm">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option><option value="100">100</option>
+                          </select> entries
+                        </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-6"><div id="datatable_filter" class="dataTables_filter">
+                        <label>Search:
+                          <input type="search" class="form-control input-sm" placeholder="" aria-controls="datatable">
+                        </label>
+                        </div>
+                      </div>
+                    </div>
+                    <thead>
+                      <tr><th>Nama Perusahaan</th><th>Jumlah Menang</th></tr>
+                    </thead>
+
+                    <tbody>
+                      <tr><td>PT. MITRA SOLUSI INFOKOM</td><td>8</td></tr>
+                      <tr><td>CV. CIPTA BOGA VIDI</td><td>7</td></tr>
+                      <tr><td>CV. BERKAH ABADI</td><td>7</td></tr>
+                      <tr><td>PT. Nashta Global Utama</td><td>6</td></tr>
+                      <tr><td>PT. MUNAKO NIAGA PRATAMA</td><td>5</td></tr>
+                    </tbody>
+
+                  </table>
                 </div>
+                </div>
+            </div>
+          </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 ">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Tabel 5 Tender Paling Sering Menang<small>2018</small></h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                          <div class="card-box table-responsive">
+                  <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                      <tr><th>Nama Perusahaan</th><th>Jumlah Menang</th></tr>
+                    </thead>
+
+                    <tbody>
+                      <tr><td>PT. HUDA TATA SARANA</td><td>10</td></tr>
+                      <tr><td>CV. CIPTA BOGA VIDI</td><td>9</td></tr>
+                      <tr><td>CV. Kyni Sukses</td><td>7</td></tr>
+                      <tr><td>CV. ADDE JAYA</td><td>5</td></tr>
+                      <tr><td>PT. MULTI MAJU SEJAHTERA</td><td>5</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+            </div>
+          </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 ">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Tabel 5 Tender Paling Sering Menang<small>2019</small></h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                          <div class="card-box table-responsive">
+                  <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                      <tr><th>Nama Perusahaan</th><th>Jumlah Menang</th></tr>
+                    </thead>
+
+                    <tbody>
+                      <tr><td>PT. MITRA SOLUSI INFOKOM</td><td>8</td></tr>
+                      <tr><td>CV. CIPTA BOGA VIDI</td><td>7</td></tr>
+                      <tr><td>CV. BERKAH ABADI</td><td>7</td></tr>
+                      <tr><td>PT. Nashta Global Utama</td><td>6</td></tr>
+                      <tr><td>PT NUSANTARA COMPNET INTEGRATOR</td><td>5</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+            </div>
+          </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 ">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Tabel 5 Tender Paling Sering Menang<small>2020</small></h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                          <div class="card-box table-responsive">
+                  <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                      <tr><th>Nama Perusahaan</th><th>Jumlah Menang</th></tr>
+                    </thead>
+
+                    <tbody>
+                      <tr><td>PT. ACCESS LINTAS SOLUSI</td><td>7</td></tr>
+                      <tr><td>PT. AMTEK SOLUSINDO</td><td>6</td></tr>
+                      <tr><td>PT. METROCOM GLOBAL SOLUSI</td><td>6</td></tr>
+                      <tr><td>BIMASAKTI CAHAYA ABADI</td><td>5</td></tr>
+                      <tr><td>PT.ZIYA SUNANDA INDONESIA</td><td>5</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+            </div>
+          </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 ">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Tabel 5 Tender Paling Sering Menang<small>2021</small></h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <div class="row">
+                        <div class="col-sm-12">
+                          <div class="card-box table-responsive">
+                  <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                      <tr><th>Nama Perusahaan</th><th>Jumlah Menang</th></tr>
+                    </thead>
+
+                    <tbody>
+                      <tr><td>PT. MITRA SOLUSI INFOKOM</td><td>10</td></tr>
+                      <tr><td>PT. Mitra Integrasi Informatika</td><td>8</td></tr>
+                      <tr><td>PT. ASTRA INTERNATIONAL TBK-TSO</td><td>8</td></tr>
+                      <tr><td>PT. LANGIT KREASI SOLUSINDO</td><td>7</td></tr>
+                      <tr><td>PT. Kemala Inti Solusi</td><td>7</td></tr>     
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+            </div>
+          </div>
               </div>
             </div>
 
@@ -535,6 +664,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource@0.1.0"></script>
 
     <!-- script src="partisipan.js"></script -->
+    <script src="script.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
